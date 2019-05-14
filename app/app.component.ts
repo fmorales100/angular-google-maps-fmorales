@@ -8,11 +8,11 @@ import { MouseEvent } from '@agm/core';
 })
 export class AppComponent  {
   // google maps zoom level
-  zoom: number = 8;
+  zoom: number = 16;
   
   // initial center position for the map
-  lat: number = 51.673858;
-  lng: number = 7.815982;
+  lat: number = 4.8084898;
+  lng: number = -75.6851401;
 
   clickedMarker(label: string, index: number) {
     console.log(`clicked the marker: ${label || index}`)
@@ -32,21 +32,28 @@ export class AppComponent  {
   
   markers: marker[] = [
 	  {
-		  lat: 51.673858,
-		  lng: 7.815982,
+		  lat: 4.807979, 
+		  lng: -75.681013,
 		  label: 'A',
-		  draggable: true
+		  draggable: true,
+      content: 'Your snazzy content.'
 	  },
 	  {
-		  lat: 51.373858,
-		  lng: 7.215982,
+		  lat: 4.8088283,
+		  lng: -75.682749,
 		  label: 'B',
 		  draggable: false
 	  },
 	  {
-		  lat: 51.723858,
-		  lng: 7.895982,
+		  lat: 4.808064,
+		  lng:  -75.686953,
 		  label: 'C',
+		  draggable: true
+	  },
+	  {
+		  lat: 4.808375, 
+		  lng: -75.689746,
+		  label: 'D',
 		  draggable: true
 	  }
   ]
