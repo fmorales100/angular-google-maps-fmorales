@@ -35,8 +35,7 @@ export class AppComponent  {
 		  lat: 4.807979, 
 		  lng: -75.681013,
 		  label: 'A',
-		  draggable: true,
-      content: 'Your snazzy content.'
+		  draggable: true
 	  },
 	  {
 		  lat: 4.8088283,
