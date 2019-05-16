@@ -22,7 +22,9 @@ export class AppComponent  {
     this.markers.push({
       lat: $event.coords.lat,
       lng: $event.coords.lng,
-      draggable: true
+      draggable: true,
+      titulo:'',
+      content:''
     });
   }
   
@@ -34,26 +36,34 @@ export class AppComponent  {
 	  {
 		  lat: 4.807979, 
 		  lng: -75.681013,
-		  label: 'A',
-		  draggable: true
+		  label: '',
+		  draggable: true,
+      titulo: 'PARQUE LA REBECA',
+      content:'http://primerolagente.com.co/parques/REBECA-min.jpg'
 	  },
 	  {
 		  lat: 4.8088283,
 		  lng: -75.682749,
-		  label: 'B',
-		  draggable: false
+		  label: '',
+		  draggable: false,
+      titulo: 'PARQUE POPULAR MODELO',
+      content:'http://primerolagente.com.co/parques/MODELO-min.jpg'
 	  },
 	  {
 		  lat: 4.808064,
 		  lng:  -75.686953,
-		  label: 'C',
-		  draggable: true
+		  label: '',
+		  draggable: true,
+      titulo: 'PARQUE LA JULIA',
+      content:'http://primerolagente.com.co/parques/LA-JULIA-min.jpg'
 	  },
 	  {
 		  lat: 4.808375, 
 		  lng: -75.689746,
-		  label: 'D',
-		  draggable: true
+		  label: '',
+		  draggable: true,
+      titulo: 'PARQUE PROMETEO',
+      content:'http://primerolagente.com.co/parques/PROMETEO-min.jpg'
 	  }
   ]
 }
@@ -64,4 +74,6 @@ interface marker {
 	lng: number;
 	label?: string;
 	draggable: boolean;
+  titulo?: string;
+  content?: string;
 }

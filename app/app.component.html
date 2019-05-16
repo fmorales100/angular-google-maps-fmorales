@@ -18,8 +18,12 @@
       [markerDraggable]="m.draggable"
       (dragEnd)="markerDragEnd(m, $event)">
       
-    <agm-info-window>
-      <strong>Ventana de contenido{{m-label}}</strong>
+    <agm-info-window >
+      <strong>{{m.titulo}}</strong>
+      <div>
+       <img src="{{m.content}}"  height="auto" width="300"> 
+      </div>
+
     </agm-info-window>
     
   </agm-marker>
